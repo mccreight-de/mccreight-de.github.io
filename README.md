@@ -1,36 +1,27 @@
-# McCreight Labs Enterprise v6.1 — Fixed GitHub Pages Build
+# McCreight Labs — Enterprise Website v7
 
-This build is intentionally designed to avoid missing CSS/JS/image problems on GitHub Pages.
+Premium, self-contained corporate website build for McCreight Labs.
 
-## What changed
-- CSS is embedded directly inside every HTML page.
-- JavaScript is embedded directly inside every HTML page.
-- Brand mark and architecture artwork are embedded as data URIs.
-- No `assets/` folder is required for the site to render correctly.
-- Service worker was removed to prevent stale-cache issues.
-- `.nojekyll` is included for GitHub Pages.
-- All pages remain linked with relative URLs.
+## What makes v7 different
+- Larger, denser enterprise homepage
+- Premium visual system with stronger hierarchy
+- Self-contained CSS and JavaScript inside each HTML page
+- No external local asset folders required for styling or scripts
+- Dark/light theme
+- Mega-menu
+- Site command search (`Ctrl/Cmd + K`)
+- 17-page corporate information architecture
+- Services, Engineering, Platform, Industries, Engagement Models, Case Studies
+- Insights, Careers, Security, Accessibility, Privacy, Terms, Contact, 404
+- Enterprise architecture visualization
+- Operational UI graphics
+- Mobile responsive design
+- SEO metadata + Organization JSON-LD
+- GitHub Pages friendly `.nojekyll`
+- No service worker, to avoid stale-cache issues
 
 ## Upload to GitHub
-Upload **all files inside this folder** directly to the repository root.
-Do not upload the parent folder itself.
+Upload all files in this ZIP directly to the repository root.
 
-The repository root should show:
-- `index.html`
-- `company.html`
-- `services.html`
-- `solutions.html`
-- `engineering.html`
-- `platform.html`
-- `case-studies.html`
-- `insights.html`
-- `careers.html`
-- `security.html`
-- `accessibility.html`
-- `contact.html`
-- `privacy.html`
-- `terms.html`
-- `404.html`
-- `.nojekyll`
-
-Then enable GitHub Pages from the branch root.
+## Integrity policy
+This build intentionally avoids inventing clients, testimonials, certifications, audited compliance, office addresses, active jobs, fake business emails, or completed client case studies.

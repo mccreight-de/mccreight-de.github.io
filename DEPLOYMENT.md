@@ -1,18 +1,10 @@
-# Deployment Guide
+# GitHub Pages Deployment
 
-## GitHub Pages
-1. Push the contents of this folder to the website repository.
-2. Open repository Settings → Pages.
-3. Deploy from the branch/folder that contains `index.html`.
-4. Add the custom domain only after DNS is ready.
-5. Replace `https://example.com/` in `sitemap.xml` and the structured-data block with the production domain.
+1. Upload all files from this ZIP directly to the repository root.
+2. Make sure `index.html` is visible at the top level.
+3. In GitHub: Settings → Pages.
+4. Deploy from your main branch and `/ (root)`.
+5. Save.
+6. Wait for GitHub Pages to publish the site.
 
-## Other static hosts
-The site is also compatible with Netlify, Cloudflare Pages, Vercel static hosting, and standard web servers.
-
-## Production checks
-- Confirm all links.
-- Connect the contact form.
-- Review privacy/terms.
-- Confirm favicon and social-preview assets.
-- Test mobile navigation, theme toggle, search palette, and service worker.
+This v7 embeds CSS and JavaScript directly in every HTML page, so missing `assets/css` or `assets/js` folders cannot break the visual design.

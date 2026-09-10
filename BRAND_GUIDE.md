@@ -1,26 +1,17 @@
-# McCreight Labs — Web Brand Guide
+# McCreight Labs Web Brand Guide
 
-## Positioning
+Positioning:
 Software Engineering · Digital Products · Technology
 
-## Visual direction
+Visual direction:
 - Enterprise technology
-- Minimal, high-contrast layouts
-- Dark graphite surfaces with electric-blue accents
-- Strong typography and generous spacing
+- Dark graphite surfaces
+- Electric-blue accents
+- High contrast
+- Strong typography
+- Generous spacing
 - Avoid decorative clutter
 
-## Core colors
-- Background: `#05080d`
-- Surface: `#0a121c`
-- Text: `#f7f9fc`
-- Muted: `#98a4b3`
-- Accent: `#2f80ff`
-
-## Typography
-- Headings: Space Grotesk
-- Body: Inter
-
-## Voice
-Clear, technical, confident, specific, and restrained.
-Avoid exaggerated claims, invented proof points, or buzzword-heavy copy.
+Voice:
+Clear, technical, confident, specific, restrained.
+Avoid exaggerated claims and invented proof points.
