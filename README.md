@@ -1,18 +1,38 @@
-# McCreight Labs Enterprise v8
+# McCreight Labs — Enterprise Website v10
 
-This version is redesigned to match the premium dark enterprise direction shown in the approved reference:
+A clean rebuild intended to look like a mature enterprise technology company website rather than a starter template.
 
-- No announcement/version bar above the navigation.
-- Large navigation header with Get in touch CTA.
-- Hero headline: Engineering What's Next.
-- Global network/globe visual.
-- Product Strategy / Engineering Excellence / Cloud / Automation / Long-Term Partnerships.
-- Focus Areas strip.
-- About section with corporate workspace imagery.
-- Multi-page enterprise architecture.
-- Self-contained CSS and JavaScript in every HTML page.
-- Images required for the home page are embedded directly as data URIs.
-- GitHub Pages-friendly `.nojekyll`.
-- No local assets folder required for rendering.
+## Design goals
+- Premium, restrained corporate technology aesthetic
+- No visible version banner or developer/demo bar
+- Strong executive-level hierarchy
+- Clean navigation and mega-menu
+- Global-network hero visual
+- Enterprise architecture section
+- Services, solutions, industries, engineering, platform, technology, insights, careers, security, legal, and contact pages
+- Responsive desktop/tablet/mobile behavior
+- Dark/light theme
+- Keyboard site search (`Ctrl/Cmd + K`)
+- Scroll progress + scroll-reveal
+- Reduced-motion support
+- Skip-to-content accessibility link
+- Self-contained CSS and JavaScript in each HTML file
+- Home-page visuals embedded directly in HTML
+- GitHub Pages friendly `.nojekyll`
+- No service worker, reducing stale-cache problems
 
-Upload all files in this ZIP directly to the repository root.
+## Integrity policy
+This build intentionally does not invent:
+- clients
+- customer logos
+- testimonials
+- certifications
+- audits/compliance claims
+- office addresses
+- active job openings
+- fake emails
+- completed client case studies
+- performance metrics presented as real company results
+
+## Upload to GitHub
+Delete the older website files from the repository and upload all files from this ZIP directly to the repository root.

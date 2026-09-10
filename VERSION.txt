@@ -1,2 +1,2 @@
-McCreight Labs Enterprise v8.1 CLEAN
-Legacy top banner removed from every HTML page.
+McCreight Labs Enterprise v10 — CLEAN REBUILD
+No legacy top banner.
