@@ -1,38 +1,45 @@
-# McCreight Labs — Enterprise Website v10
+# McCreight Labs — Enterprise Website v11
 
-A clean rebuild intended to look like a mature enterprise technology company website rather than a starter template.
+A clean, production-oriented rebuild intended to look and behave like a mature technology-company website rather than a starter template.
 
-## Design goals
-- Premium, restrained corporate technology aesthetic
-- No visible version banner or developer/demo bar
-- Strong executive-level hierarchy
-- Clean navigation and mega-menu
-- Global-network hero visual
-- Enterprise architecture section
-- Services, solutions, industries, engineering, platform, technology, insights, careers, security, legal, and contact pages
-- Responsive desktop/tablet/mobile behavior
+## Major implementation areas
+- Premium corporate home page and visual hierarchy
+- Individual service pages
+- Work / reference blueprint section
+- Full original Insights articles
+- Company, Solutions, Engineering, Platform, Technology, Industries, Engagements
+- Security / Trust content
+- Accessibility, Privacy, Cookies, Terms
+- Contact intake flow with real endpoint support
+- Thank-you state
+- Search palette (`Ctrl/Cmd + K`)
 - Dark/light theme
-- Keyboard site search (`Ctrl/Cmd + K`)
-- Scroll progress + scroll-reveal
+- Scroll progress and restrained reveal motion
 - Reduced-motion support
-- Skip-to-content accessibility link
-- Self-contained CSS and JavaScript in each HTML file
-- Home-page visuals embedded directly in HTML
-- GitHub Pages friendly `.nojekyll`
-- No service worker, reducing stale-cache problems
+- Accessible focus states and skip navigation
+- SEO titles, descriptions, canonicals, Open Graph, Twitter cards
+- Organization / Article structured data
+- `sitemap.xml`, `robots.txt`, `humans.txt`
+- Open Graph image
+- Security header templates for Cloudflare/Netlify/Vercel
+- GitHub Pages `.nojekyll`
+- No service worker, avoiding stale-cache problems
+- Critical visual system embedded in every HTML page
 
-## Integrity policy
-This build intentionally does not invent:
-- clients
-- customer logos
-- testimonials
-- certifications
-- audits/compliance claims
-- office addresses
+## Important: what still requires real company credentials
+The frontend is prepared, but these cannot be truthfully invented:
+- official custom domain
+- verified business email
+- real form endpoint
+- analytics account / ID
+- real client case studies and testimonials
+- certifications or audited compliance claims
 - active job openings
-- fake emails
-- completed client case studies
-- performance metrics presented as real company results
 
-## Upload to GitHub
-Delete the older website files from the repository and upload all files from this ZIP directly to the repository root.
+Edit `site-config.js` once you have the real contact endpoint or analytics ID.
+
+## GitHub Pages
+The canonical URL is currently configured for:
+https://mccreight-de.github.io/mccreight-website/
+
+If a custom domain is added later, update the site URL in the HTML metadata and sitemap using `configure-site.py`.

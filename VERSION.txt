@@ -1,2 +1,1 @@
-McCreight Labs Enterprise v10 — CLEAN REBUILD
-No legacy top banner.
+McCreight Labs Enterprise v11 — production-oriented clean rebuild

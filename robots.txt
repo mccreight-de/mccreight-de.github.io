@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://mccreight-de.github.io/mccreight-website/sitemap.xml

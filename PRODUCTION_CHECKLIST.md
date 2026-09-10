@@ -1,19 +1,37 @@
 # Production Checklist
 
-Before public launch:
-- [ ] Official domain confirmed
-- [ ] Verified business email connected
-- [ ] Contact form connected to a real backend
-- [ ] GitHub organization URL confirmed
+## Identity
+- [ ] Official custom domain confirmed
+- [ ] Verified business email created
 - [ ] Legal company name confirmed
-- [ ] Any public location intentionally approved
-- [ ] Client references have permission
-- [ ] Case studies represent real work
-- [ ] Testimonials are genuine and approved
-- [ ] Certifications/compliance claims are verified
-- [ ] Active job openings are real
-- [ ] Security contact is monitored
-- [ ] Privacy and Terms reflect actual data practices
-- [ ] Accessibility QA completed
-- [ ] Cross-browser QA completed
-- [ ] Performance QA completed
+- [ ] Public location intentionally approved
+
+## Contact / conversion
+- [ ] `contactEndpoint` added to `site-config.js`
+- [ ] Test successful and failed form submissions
+- [ ] Spam protection configured at the form provider
+- [ ] Response workflow defined
+
+## Proof
+- [ ] Real projects selected for publication
+- [ ] Client permission obtained where required
+- [ ] Real case studies replace reference blueprints
+- [ ] Genuine testimonials approved
+- [ ] Any published metrics are verifiable
+
+## Trust
+- [ ] Security contact monitored
+- [ ] Privacy reflects actual providers and data flow
+- [ ] Terms reviewed
+- [ ] Cookie policy reflects actual analytics/marketing setup
+- [ ] Certifications/compliance claims verified before publishing
+
+## Quality
+- [ ] Keyboard QA
+- [ ] Screen-reader QA
+- [ ] Color-contrast QA
+- [ ] Mobile QA
+- [ ] Cross-browser QA
+- [ ] Performance / Core Web Vitals QA
+- [ ] Broken-link scan
+- [ ] Metadata / social preview validation

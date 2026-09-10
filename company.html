@@ -1,9 +1,22 @@
-<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta name="theme-color" content="#06101a"><meta name="color-scheme" content="dark light"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><title>Company — McCreight Labs</title><meta name="description" content="About McCreight Labs and our engineering approach."><meta property="og:title" content="Company — McCreight Labs"><meta property="og:description" content="About McCreight Labs and our engineering approach."><meta property="og:type" content="website"><style>
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta name="theme-color" content="#06101a"><meta name="color-scheme" content="dark light"><meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Company — McCreight Labs</title>
+<meta name="description" content="About McCreight Labs and our engineering approach.">
+<link rel="canonical" href="https://mccreight-de.github.io/mccreight-website/company.html">
+<meta property="og:title" content="Company — McCreight Labs">
+<meta property="og:description" content="About McCreight Labs and our engineering approach.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mccreight-de.github.io/mccreight-website/company.html">
+<meta property="og:image" content="https://mccreight-de.github.io/mccreight-website/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Company — McCreight Labs">
+<meta name="twitter:description" content="About McCreight Labs and our engineering approach.">
+<meta name="twitter:image" content="https://mccreight-de.github.io/mccreight-website/og-image.png">
+<style>
 *{box-sizing:border-box}
 :root{
 --bg:#04080d;--bg2:#07111b;--surface:#09131e;--surface2:#0d1926;--surface3:#102031;
 --text:#f7f9fc;--muted:#9ba9b9;--muted2:#6e8094;--line:#1a2a3a;--line2:#2b425b;
---blue:#1888ff;--blue2:#74b6ff;--cyan:#62d8ff;--green:#50d99e;
+--blue:#1888ff;--blue2:#74b6ff;--cyan:#62d8ff;--green:#50d99e;--amber:#f4c66a;
 --max:1480px;--r:16px;--shadow:0 38px 110px rgba(0,0,0,.42);--header:82px
 }
 html[data-theme="light"]{
@@ -12,7 +25,7 @@ html[data-theme="light"]{
 --shadow:0 26px 80px rgba(30,55,80,.14)
 }
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;overflow-x:hidden}
 body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;background:
 radial-gradient(circle at 14% 0%,rgba(24,136,255,.08),transparent 29%),
 radial-gradient(circle at 88% 42%,rgba(98,216,255,.03),transparent 24%)}
@@ -24,11 +37,12 @@ button{color:inherit}
 .container{width:min(var(--max),calc(100% - 64px));margin:auto}
 .skip-link{position:fixed;left:12px;top:-60px;z-index:300;background:var(--blue);color:#fff;padding:10px 14px;border-radius:8px;transition:.2s}
 .skip-link:focus{top:12px}
+:focus-visible{outline:2px solid var(--blue2);outline-offset:3px;border-radius:5px}
 .kicker{display:flex;align-items:center;gap:12px;font-size:10px;font-weight:700;letter-spacing:.23em;color:#9ab0c8;text-transform:uppercase}
 .kicker:after{content:"";width:50px;height:1px;background:var(--blue)}
-h1,h2,h3,h4{font-family:"Space Grotesk",Inter,sans-serif}
-h1{font-size:clamp(64px,7.6vw,118px);line-height:.93;letter-spacing:-.071em;margin:18px 0 28px}
-h2{font-size:clamp(44px,5.1vw,78px);line-height:.98;letter-spacing:-.056em;margin:16px 0 24px}
+h1,h2,h3,h4{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1{font-size:clamp(64px,7.6vw,118px);line-height:.93;letter-spacing:-.071em;margin:18px 0 28px;font-weight:750}
+h2{font-size:clamp(44px,5.1vw,78px);line-height:.98;letter-spacing:-.056em;margin:16px 0 24px;font-weight:730}
 h3{letter-spacing:-.03em}
 p{color:var(--muted)}
 .grad{background:linear-gradient(90deg,#d0eaff 0%,#6bbdff 42%,#1888ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -38,6 +52,7 @@ p{color:var(--muted)}
 .btn-primary:hover{filter:brightness(1.06);transform:translateY(-1px)}
 .btn-secondary{border-color:#4e657c;background:rgba(4,10,16,.24);color:#f4f7fa}
 .btn-secondary:hover{background:rgba(255,255,255,.04)}
+.btn-ghost{border-color:var(--line);background:var(--surface);color:var(--text)}
 .btn-link{display:inline-flex;gap:8px;align-items:center;font-size:12px;color:#a9c9ec}
 .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:9px;letter-spacing:.08em;color:var(--muted)}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px rgba(80,217,158,.6)}
@@ -48,8 +63,8 @@ p{color:var(--muted)}
 .navbar{height:var(--header);display:flex;align-items:center;gap:30px}
 .brand{display:flex;align-items:center;gap:11px;min-width:max-content}
 .brand img{width:40px;height:40px;border-radius:10px}
-.brand strong{font:650 18px "Space Grotesk"}
-.navlinks{display:flex;gap:28px;margin-left:auto;align-items:center}
+.brand strong{font-weight:700;font-size:18px;letter-spacing:-.02em}
+.navlinks{display:flex;gap:27px;margin-left:auto;align-items:center}
 .navlinks>a,.mega>a{font-size:13px;color:#ccd5df}
 .navlinks>a:hover,.navlinks>a.active,.mega>a:hover,.mega>a.active{color:#fff}
 .nav-actions{display:flex;align-items:center;gap:9px}
@@ -58,7 +73,7 @@ p{color:var(--muted)}
 .divider{width:1px;height:34px;background:rgba(255,255,255,.12)}
 .menu-toggle{display:none;background:none;border:0;color:white;font-size:24px}
 .mega{position:relative}
-.mega-panel{display:none;position:absolute;top:31px;left:-230px;width:760px;background:#091520;border:1px solid var(--line);border-radius:15px;padding:14px;box-shadow:var(--shadow);grid-template-columns:1fr 1fr;gap:8px}
+.mega-panel{display:none;position:absolute;top:31px;left:-240px;width:780px;background:#091520;border:1px solid var(--line);border-radius:15px;padding:14px;box-shadow:var(--shadow);grid-template-columns:1fr 1fr;gap:8px}
 .mega:hover .mega-panel{display:grid}
 .mega-panel a{padding:14px;border-radius:10px}
 .mega-panel a:hover{background:#0e1d2c}
@@ -122,7 +137,7 @@ linear-gradient(180deg,var(--bg),transparent 8%,transparent 89%,var(--bg))}
 
 .value-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:46px}
 .value-grid div{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-.value-grid strong{font:650 28px "Space Grotesk";color:var(--blue)}
+.value-grid strong{font-size:28px;font-weight:700;color:var(--blue)}
 .value-grid span{display:block;font-size:10px;color:#738498;margin-top:7px}
 
 .process{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
@@ -158,6 +173,7 @@ linear-gradient(180deg,var(--bg),transparent 8%,transparent 89%,var(--bg))}
 .service-detail,.case-detail{display:grid;grid-template-columns:180px 1fr 1fr;gap:46px;padding:44px 0;border-top:1px solid var(--line)}
 .service-detail .num,.case-detail .tag{font-size:9px;color:#4fa8ff;letter-spacing:.14em}
 .service-detail h3,.case-detail h3{font-size:25px;margin:0}.service-detail p,.case-detail p{font-size:13px;margin:0}
+
 .tech-board{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .tech-panel{border:1px solid var(--line);border-radius:14px;background:#09131e;padding:24px}
 .tech-panel h3{margin:0 0 18px}.tech-list{display:flex;gap:8px;flex-wrap:wrap}
@@ -169,6 +185,17 @@ linear-gradient(180deg,var(--bg),transparent 8%,transparent 89%,var(--bg))}
 .insight-top:after{content:"";position:absolute;inset:24px;background-image:linear-gradient(rgba(111,150,201,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(111,150,201,.10) 1px,transparent 1px);background-size:30px 30px}
 .insight-body{padding:22px}.insight-body span{font-size:9px;color:#4ca6ff}.insight-body h3{font-size:20px;margin:9px 0}.insight-body p{font-size:12px}
 
+.article{max-width:900px;margin:auto}
+.article-head{padding:112px 0 56px;border-bottom:1px solid var(--line)}
+.article-head h1{font-size:clamp(50px,6vw,82px)}
+.article-meta{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted2);font-size:11px}
+.article-body{padding:60px 0 110px}
+.article-body h2{font-size:34px;margin:50px 0 14px}
+.article-body h3{font-size:22px;margin:32px 0 10px}
+.article-body p,.article-body li{font-size:16px;line-height:1.8;color:#aab6c4}
+.article-body blockquote{margin:36px 0;padding:20px 24px;border-left:2px solid var(--blue);background:var(--surface);color:#d7e0e9}
+.article-body code{background:var(--surface);border:1px solid var(--line);padding:2px 6px;border-radius:5px}
+
 .security-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .security-panel{border:1px solid var(--line);border-radius:14px;padding:28px;background:#09131e}
 .security-list{margin-top:20px}.security-list div{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-top:1px solid var(--line);font-size:11px}
@@ -178,8 +205,13 @@ linear-gradient(180deg,var(--bg),transparent 8%,transparent 89%,var(--bg))}
 .contact-form{display:grid;gap:14px}.contact-form label{font-size:10px;color:#8a9aac;letter-spacing:.08em}
 .contact-form input,.contact-form textarea,.contact-form select{width:100%;background:#07101a;border:1px solid var(--line);color:#fff;border-radius:8px;padding:13px 14px;outline:none}
 .contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{border-color:#2f7cc6}
-.contact-form textarea{min-height:170px}.form-note{font-size:10px;color:#6e7e90}
-.faq{border-top:1px solid var(--line)}.faq details{padding:18px 0;border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font:650 16px "Space Grotesk"}.faq p{font-size:13px}
+.contact-form textarea{min-height:170px}
+.form-note{font-size:10px;color:#6e7e90}
+.form-status{display:none;border:1px solid var(--line);border-radius:10px;padding:13px;margin-top:4px;font-size:12px;color:#b7c5d4}
+.form-status.show{display:block}
+.form-status.ok{border-color:rgba(80,217,158,.35);background:rgba(80,217,158,.06)}
+.form-status.warn{border-color:rgba(244,198,106,.35);background:rgba(244,198,106,.06)}
+.faq{border-top:1px solid var(--line)}.faq details{padding:18px 0;border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font-weight:650;font-size:16px}.faq p{font-size:13px}
 
 .page-hero{padding:116px 0 92px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 78% 20%,rgba(22,135,255,.11),transparent 28%)}
 .page-hero p{max-width:790px;font-size:18px}
@@ -200,10 +232,16 @@ footer{padding:44px 0}.footer-grid{display:grid;grid-template-columns:1.3fr repe
 .palette-results{max-height:390px;overflow:auto;padding:8px}.palette-results a{display:block;padding:12px;border-radius:8px}.palette-results a:hover{background:#0d1b29}
 .palette-results strong{display:block;font-size:12px}.palette-results span{display:block;font-size:10px;color:#78899c}
 
-.cookie{position:fixed;left:20px;bottom:20px;z-index:130;width:min(420px,calc(100% - 40px));background:#09131e;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);display:none}
-.cookie.show{display:block}.cookie p{font-size:11px;margin:0 0 12px}.cookie-actions{display:flex;gap:8px}
+.cookie{position:fixed;left:20px;bottom:20px;z-index:130;width:min(430px,calc(100% - 40px));background:#09131e;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);display:none}
+.cookie.show{display:block}.cookie p{font-size:11px;margin:0 0 12px}.cookie-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+.modal{position:fixed;inset:0;z-index:180;background:rgba(0,0,0,.62);display:none;place-items:center;padding:20px}
+.modal.open{display:grid}.modal-card{width:min(620px,100%);background:#09131e;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+.modal-card h3{margin:0 0 8px}.modal-card textarea{width:100%;min-height:210px;background:#06101a;border:1px solid var(--line);color:#e6edf5;border-radius:9px;padding:12px;margin-top:12px}
+.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:14px;flex-wrap:wrap}
+
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
-.not-found{min-height:70vh;display:grid;place-items:center;text-align:center;padding:60px 20px}.not-found strong{font:700 clamp(90px,18vw,190px) "Space Grotesk";color:var(--blue);line-height:.8}
+.not-found{min-height:70vh;display:grid;place-items:center;text-align:center;padding:60px 20px}.not-found strong{font-size:clamp(90px,18vw,190px);font-weight:800;color:var(--blue);line-height:.8}
 
 @media(prefers-reduced-motion:reduce){
 *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
@@ -230,49 +268,54 @@ h1{font-size:54px}.hero-grid{min-height:auto;padding-top:20px}.hero-copy{padding
 .page-hero{padding:88px 0 68px}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}
 .icon-btn.search-btn{display:none}.office-card{min-height:280px}
 .arch-canvas{min-height:720px}.arch-node{width:76%;left:12%!important;right:auto!important}.n1{top:5%}.n2{top:22%}.n3{top:39%}.n4{top:56%;bottom:auto}.n5{top:73%;bottom:auto}.line{display:none}
+.article-body p,.article-body li{font-size:15px}
 }
-</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "McCreight Labs", "sameAs": ["https://github.com/mccreight-de/mccreight-labs"]}</script></head><body>
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "McCreight Labs", "url": "https://mccreight-de.github.io/mccreight-website/", "sameAs": ["https://github.com/mccreight-de/mccreight-labs"]}</script>
+</head><body>
 <a class="skip-link" href="#main">Skip to content</a><div class="progress"></div>
 <header class="site-header"><div class="navbar container">
 <a class="brand" href="index.html"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSI+CjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSIjMDcxMDFCIi8+CjxwYXRoIGQ9Ik0xNyAyMkw0MCA0MEw2MyAyMlY1OEg1M1YzOEw0MCA0OUwyNyAzOFY1OEgxN1YyMloiIGZpbGw9IiNGOEZCRkYiLz4KPHBhdGggZD0iTTE3IDIyTDQwIDQwVjUxTDE3IDMyVjIyWiIgZmlsbD0iIzI0OEJGRiIvPgo8L3N2Zz4=" alt="McCreight Labs"><strong>McCreight Labs</strong></a>
 <button class="menu-toggle" aria-label="Open navigation">☰</button>
-<nav class="navlinks" aria-label="Primary">
+<nav class="navlinks" aria-label="Primary navigation">
 <a href="index.html" class="">Home</a>
 <a href="company.html" class="active">Company</a>
 <div class="mega"><a href="services.html" class="">Services</a>
 <div class="mega-panel">
-<a href="services.html"><strong>Services</strong><span>Software, product, cloud, automation</span></a>
-<a href="engineering.html"><strong>Engineering</strong><span>Architecture, quality, delivery, operations</span></a>
-<a href="platform.html"><strong>Platform</strong><span>Connected-enterprise architecture</span></a>
-<a href="technology.html"><strong>Technology</strong><span>Stack and decision model</span></a>
-<a href="industries.html"><strong>Industries</strong><span>Industry directions</span></a>
-<a href="engagements.html"><strong>Engagement Models</strong><span>Ways to structure technical work</span></a>
+<a href="software-engineering.html"><strong>Software Engineering</strong><span>Applications, APIs, backend systems</span></a>
+<a href="digital-products.html"><strong>Digital Products</strong><span>Product engineering and digital experiences</span></a>
+<a href="cloud-infrastructure.html"><strong>Cloud & Infrastructure</strong><span>Cloud architecture, CI/CD, observability</span></a>
+<a href="automation-integrations.html"><strong>Automation & Integrations</strong><span>Workflows, APIs, orchestration</span></a>
+<a href="technology-strategy.html"><strong>Technology Strategy</strong><span>Architecture, modernization, roadmaps</span></a>
+<a href="engineering.html"><strong>Engineering</strong><span>Standards, quality, delivery, operations</span></a>
 </div></div>
 <a href="solutions.html" class="">Solutions</a>
+<a href="work.html" class="">Work</a>
 <a href="industries.html" class="">Industries</a>
 <a href="insights.html" class="">Insights</a>
-<a href="careers.html" class="">Careers</a>
 <a href="contact.html" class="">Contact</a>
 </nav>
-<div class="nav-actions"><button class="icon-btn search-btn" aria-label="Search site">⌕</button><div class="divider"></div><button class="icon-btn" data-theme-toggle aria-label="Toggle color theme">☀</button><a class="btn btn-primary" href="contact.html">Get in touch →</a></div>
-</div></header><main id="main">
-<section class="page-hero"><div class="container reveal"><div class="kicker">COMPANY</div><h1>Technology built with<br><span class="grad">discipline and purpose.</span></h1><p>McCreight Labs is a software and technology company focused on reliable, scalable, and maintainable digital systems.</p></div></section>
+<div class="nav-actions"><button class="icon-btn search-btn" aria-label="Search site">⌕</button><div class="divider"></div><button class="icon-btn" data-theme-toggle aria-label="Toggle color theme">☀</button><a class="btn btn-primary" data-track="header_contact" href="contact.html">Get in touch →</a></div>
+</div></header><main id="main"><section class="page-hero"><div class="container reveal"><div class="kicker">COMPANY</div><h1>Technology built with<br><span class='grad'>discipline and purpose.</span></h1><p>McCreight Labs is a software and technology company focused on reliable, scalable, and maintainable digital systems.</p></div></section>
 <section class="section"><div class="container split"><div class="reveal"><div class="kicker">OUR APPROACH</div><h2>Product thinking meets <span class="grad">engineering depth.</span></h2></div><div class="reveal"><p class="lead">Good software is architecture, product judgment, delivery, security, operations, and maintainability working together.</p><p>We focus on clear systems, responsible engineering, and practical technical choices that support real business needs.</p><div class="value-grid"><div><strong>01</strong><span>Clear architecture</span></div><div><strong>02</strong><span>Reliable delivery</span></div><div><strong>03</strong><span>Operational visibility</span></div><div><strong>04</strong><span>Long-term evolution</span></div></div></div></div></section>
 <section class="section section-soft"><div class="container"><div class="section-header"><div><div class="kicker">PRINCIPLES</div><h2>How we work.</h2></div></div><div class="grid-4"><div class="card reveal"><span class="index">01</span><h3>Clarity</h3><p>Simple architecture and explicit tradeoffs.</p></div><div class="card reveal"><span class="index">02</span><h3>Reliability</h3><p>Systems designed for real operating conditions.</p></div><div class="card reveal"><span class="index">03</span><h3>Security</h3><p>Responsible defaults built into the foundation.</p></div><div class="card reveal"><span class="index">04</span><h3>Evolution</h3><p>Room for future change without sacrificing current quality.</p></div></div></div></section>
+<section class="section"><div class="container"><div class="section-header"><div><div class="kicker">COMPANY SYSTEM</div><h2>Built around the<br><span class="grad">quality of the work.</span></h2></div><p>The website deliberately avoids inflated claims. Proof points, certifications, clients, offices, and metrics should be published only when they are real and verifiable.</p></div><div class="grid-3"><div class="card"><h3>Engineering-led</h3><p>Technical decisions are evaluated for maintainability, security, and operating impact.</p></div><div class="card"><h3>Outcome-oriented</h3><p>Technology work is connected to the workflow, product, or business problem it exists to improve.</p></div><div class="card"><h3>Long-term minded</h3><p>Speed matters, but not at the expense of foundations that become difficult to operate later.</p></div></div></div></section>
 </main>
 <footer><div class="container">
 <div class="footer-grid">
-<div><a class="brand" href="index.html"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSI+CjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSIjMDcxMDFCIi8+CjxwYXRoIGQ9Ik0xNyAyMkw0MCA0MEw2MyAyMlY1OEg1M1YzOEw0MCA0OUwyNyAzOFY1OEgxN1YyMloiIGZpbGw9IiNGOEZCRkYiLz4KPHBhdGggZD0iTTE3IDIyTDQwIDQwVjUxTDE3IDMyVjIyWiIgZmlsbD0iIzI0OEJGRiIvPgo8L3N2Zz4=" alt=""><strong>McCreight Labs</strong></a><p style="font-size:12px;max-width:330px;margin-top:18px">Enterprise software engineering, digital products, cloud systems, automation, and technology strategy.</p></div>
-<div class="footer-col"><h4>Company</h4><a href="company.html">About</a><a href="careers.html">Careers</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a></div>
-<div class="footer-col"><h4>Capabilities</h4><a href="services.html">Services</a><a href="engineering.html">Engineering</a><a href="platform.html">Platform</a><a href="technology.html">Technology</a><a href="industries.html">Industries</a></div>
-<div class="footer-col"><h4>Trust & Legal</h4><a href="security.html">Security</a><a href="accessibility.html">Accessibility</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/mccreight-de/mccreight-labs">GitHub</a></div>
+<div><a class="brand" href="index.html"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSI+CjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSIjMDcxMDFCIi8+CjxwYXRoIGQ9Ik0xNyAyMkw0MCA0MEw2MyAyMlY1OEg1M1YzOEw0MCA0OUwyNyAzOFY1OEgxN1YyMloiIGZpbGw9IiNGOEZCRkYiLz4KPHBhdGggZD0iTTE3IDIyTDQwIDQwVjUxTDE3IDMyVjIyWiIgZmlsbD0iIzI0OEJGRiIvPgo8L3N2Zz4=" alt=""><strong>McCreight Labs</strong></a><p style="font-size:12px;max-width:340px;margin-top:18px">Enterprise software engineering, digital products, cloud systems, automation, and technology strategy.</p></div>
+<div class="footer-col"><h4>Company</h4><a href="company.html">About</a><a href="work.html">Work</a><a href="careers.html">Careers</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a></div>
+<div class="footer-col"><h4>Capabilities</h4><a href="software-engineering.html">Software Engineering</a><a href="digital-products.html">Digital Products</a><a href="cloud-infrastructure.html">Cloud & Infrastructure</a><a href="automation-integrations.html">Automation</a><a href="technology-strategy.html">Technology Strategy</a></div>
+<div class="footer-col"><h4>Trust & Legal</h4><a href="security.html">Security</a><a href="accessibility.html">Accessibility</a><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="terms.html">Terms</a><a href="https://github.com/mccreight-de/mccreight-labs" rel="noopener">GitHub</a></div>
 </div>
 <div class="footer-bottom"><span>© 2026 McCreight Labs. All rights reserved.</span><span>Software Engineering · Digital Products · Technology</span></div>
 </div></footer>
-<div class="palette"><div class="palette-box"><input type="search" aria-label="Search McCreight Labs" placeholder="Search McCreight Labs… (Ctrl/Cmd + K)"><div class="palette-results"></div></div></div>
-<div class="cookie"><p>This site stores only interface preferences locally. No analytics are configured.</p><div class="cookie-actions"><button class="btn btn-primary" data-cookie>Accept</button><button class="btn btn-secondary" data-cookie>Dismiss</button></div></div>
-<script>
+<div class="palette" role="dialog" aria-label="Site search"><div class="palette-box"><input type="search" aria-label="Search McCreight Labs" placeholder="Search McCreight Labs… (Ctrl/Cmd + K)"><div class="palette-results"></div></div></div>
+<div class="cookie"><p>This site stores only interface preferences locally. Analytics are disabled unless explicitly configured.</p><div class="cookie-actions"><button class="btn btn-primary" data-cookie>Accept</button><a class="btn btn-ghost" href="cookies.html">Cookie policy</a><button class="btn btn-ghost" data-cookie>Dismiss</button></div></div>
+<div class="modal" id="brief-modal" role="dialog" aria-modal="true" aria-label="Prepared project brief"><div class="modal-card"><h3>Project brief prepared</h3><p>The website is ready for a real form provider. Until a verified endpoint is configured, you can copy this brief.</p><textarea id="brief-text" readonly></textarea><div class="modal-actions"><button class="btn btn-ghost" data-close-modal>Close</button><button class="btn btn-primary" data-copy-brief>Copy brief</button></div></div></div>
+<script src="site-config.js"></script><script>
 const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const CFG=window.MCC_SITE||{};
 
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
 $$('.reveal').forEach(e=>io.observe(e));
@@ -297,26 +340,31 @@ syncTheme();
 theme?.addEventListener('click',()=>{const n=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=n;localStorage.setItem('mcc-theme',n);syncTheme()});
 
 const cookie=$('.cookie');
-if(cookie&&!localStorage.getItem('mcc-cookie'))setTimeout(()=>cookie.classList.add('show'),800);
+if(cookie&&!localStorage.getItem('mcc-cookie'))setTimeout(()=>cookie.classList.add('show'),900);
 $$('[data-cookie]').forEach(b=>b.addEventListener('click',()=>{localStorage.setItem('mcc-cookie','1');cookie?.classList.remove('show')}));
 
-$$('form[data-demo]').forEach(f=>f.addEventListener('submit',e=>{
-  e.preventDefault();
-  const b=$('button[type=submit]',f),o=b.textContent;
-  b.textContent='Request prepared ✓';b.disabled=true;
-  setTimeout(()=>{b.textContent=o;b.disabled=false},2200)
-}));
+function track(name,data={}){
+  window.dispatchEvent(new CustomEvent('mcc:analytics',{detail:{name,...data}}));
+  if(window.gtag) window.gtag('event',name,data);
+}
+$$('[data-track]').forEach(el=>el.addEventListener('click',()=>track(el.dataset.track,{path:location.pathname})));
 
 const pages=[
 ['Home','index.html','Enterprise overview'],
 ['Company','company.html','Company and engineering philosophy'],
 ['Services','services.html','Software, product, cloud, automation'],
+['Software Engineering','software-engineering.html','Applications, APIs, backend systems'],
+['Digital Products','digital-products.html','Product engineering and digital experiences'],
+['Cloud & Infrastructure','cloud-infrastructure.html','Cloud architecture, CI/CD, observability'],
+['Automation & Integrations','automation-integrations.html','Workflows, APIs, orchestration'],
+['Technology Strategy','technology-strategy.html','Architecture, modernization, roadmaps'],
 ['Solutions','solutions.html','Platforms, automation, modernization'],
 ['Engineering','engineering.html','Architecture, quality, delivery'],
 ['Platform','platform.html','Connected enterprise architecture'],
 ['Technology','technology.html','Technology stack and decision model'],
 ['Industries','industries.html','Industry directions'],
 ['Engagements','engagements.html','Ways to structure technical work'],
+['Work','work.html','Reference solution blueprints'],
 ['Case Studies','case-studies.html','Illustrative scenarios'],
 ['Insights','insights.html','Technology perspectives'],
 ['Security','security.html','Security and trust'],
@@ -336,6 +384,49 @@ palette?.addEventListener('click',e=>{if(e.target===palette)closePalette()});
 input?.addEventListener('input',e=>render(e.target.value));
 document.addEventListener('keydown',e=>{
  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openPalette()}
- if(e.key==='Escape')closePalette()
+ if(e.key==='Escape'){closePalette();$('.modal.open')?.classList.remove('open')}
 });
+
+function briefFromForm(f){
+  const fd=new FormData(f), lines=['McCreight Labs — Project Brief',''];
+  for(const [k,v] of fd.entries()) lines.push(`${k}: ${v}`);
+  return lines.join('\n');
+}
+async function submitConfiguredForm(f){
+  const kind=f.dataset.kind||'contact';
+  const endpoint=kind==='careers'?CFG.careersEndpoint:CFG.contactEndpoint;
+  const status=$('.form-status',f);
+  if(endpoint){
+    try{
+      status.textContent='Sending…';status.className='form-status show';
+      const r=await fetch(endpoint,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}});
+      if(!r.ok) throw new Error('Request failed');
+      status.textContent='Thank you. Your request has been sent.';
+      status.className='form-status show ok';
+      f.reset(); track(kind+'_submitted');
+      setTimeout(()=>location.href='thank-you.html',900);
+    }catch(err){
+      status.textContent='The request could not be sent. Please try again.';
+      status.className='form-status show warn';
+    }
+    return;
+  }
+  const brief=briefFromForm(f);
+  const modal=$('#brief-modal'), ta=$('#brief-text');
+  if(ta)ta.value=brief;
+  modal?.classList.add('open');
+  status.textContent='The site is ready for a real form endpoint. Until one is configured, your project brief has been prepared for copying.';
+  status.className='form-status show warn';
+}
+$$('form[data-configured-form]').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();submitConfiguredForm(f)}));
+$('[data-close-modal]')?.addEventListener('click',()=>$('#brief-modal')?.classList.remove('open'));
+$('[data-copy-brief]')?.addEventListener('click',async()=>{
+ const ta=$('#brief-text'); if(!ta)return;
+ try{await navigator.clipboard.writeText(ta.value);$('[data-copy-brief]').textContent='Copied ✓'}catch{ta.select();document.execCommand('copy')}
+});
+
+if(CFG.analytics?.provider==='ga4' && CFG.analytics.id){
+ const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(CFG.analytics.id);document.head.appendChild(s);
+ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',CFG.analytics.id);
+}
 </script></body></html>
